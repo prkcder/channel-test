@@ -1,0 +1,27 @@
+services:
+  scores-api:
+    build: .
+    container_name: scores-api
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+    # Later add Postgres:
+    # depends_on:
+    #   - db
+
+
+  # db:
+  #   image: postgres:15
+  #   restart: always
+  #   environment:
+  #     POSTGRES_USER: channel
+  #     POSTGRES_PASSWORD: channel123
+  #     POSTGRES_DB: channel_test
+  #   ports:
+  #     - "5432:5432"
+  #   volumes:
+  #     - pgdata:/var/lib/postgresql/data
+
+# volumes:
+#   pgdata:
