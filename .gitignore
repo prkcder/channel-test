@@ -4,7 +4,7 @@
 *.dll
 *.so
 *.dylib
-scores-api
+notes.txt
 
 # Output of the go coverage tool
 *.out
