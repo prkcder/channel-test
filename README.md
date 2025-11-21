@@ -103,6 +103,19 @@ curl http://localhost:8080/health
 
 **Note:** Student IDs change as new data arrives from the live stream. Always query `/students` first to see current IDs.
 
+**Docker Note:**
+- if on wsl2 run this first
+```
+# Start the Docker daemon manually
+sudo service docker start
+
+# Check if Docker is running
+sudo service docker status
+
+# Or check with
+docker ps
+```
+
 ## Running Tests
 ```bash
 # Run all tests
